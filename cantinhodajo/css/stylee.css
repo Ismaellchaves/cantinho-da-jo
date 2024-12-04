@@ -1,0 +1,230 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #8A0B86;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Seção de Horários */
+.schedule, .services, .contact, .selected-items {
+    margin-bottom: 20px;
+}
+
+.time-slots, .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.time-slot, .service {
+    padding: 10px 20px;
+    background-color: #8A0B86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1 1 48%; /* Ajuste a largura dos botões para ficarem mais compactos */
+}
+
+.time-slot:hover, .service:hover {
+    background-color: #EA21A2;
+}
+
+.selected-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.selected-items li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão "X" */
+.remove-item {
+    background-color: transparent;
+    color: #8A0B86;
+    border: 1px solid #8A0B86;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Estilo para o campo de horário personalizado */
+#custom-time {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #8A0B86;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#custom-time:focus {
+    border-color: #EA21A2;
+    outline: none;
+}
+
+#add-custom-time {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #8A0B86;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+#add-custom-time:hover {
+    background-color: #EA21A2;
+    transform: scale(1.1);
+}
+
+#add-custom-time:active {
+    transform: scale(0.95);
+}
+
+/* Botão de Contato */
+.animated-button {
+    display: inline-block;
+    padding: 12px 24px; /* Ajuste o tamanho do botão para ficá-lo mais compacto */
+    background-color: #8A0B86;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* Adiciona um pequeno espaço entre os botões */
+}
+
+/* Botão de Contato no hover */
+.animated-button:hover {
+    background-color: #EA21A2;
+    transform: scale(1.1);
+}
+
+.animated-button:active {
+    transform: scale(0.95);
+}
+
+/* Estilo para o campo de nome do cliente */
+.contact label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #8A0B86;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact input:focus {
+    border-color: #EA21A2;
+    outline: none;
+}
+
+.contact input::placeholder {
+    color: #888;
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .time-slot, .service {
+        flex: 1 1 100%; /* Botões ocupam toda a largura em dispositivos móveis */
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .selected-items li {
+        flex-direction: column; /* Itens selecionados ficam empilhados */
+    }
+
+    .remove-item {
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+    }
+
+    #custom-time {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .animated-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .contact input, .contact label {
+        font-size: 14px;
+    }
+
+    .contact input {
+        padding: 10px;
+    }
+
+    #add-custom-time {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Ajuste o espaço entre os botões */
+    .animated-button + .animated-button {
+        margin-top: 10px;
+    }
+}

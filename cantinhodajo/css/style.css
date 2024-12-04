@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste geral para o botão ISTEC/Créditos */
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-sm {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.btn-primary {
+    background-color: #AF05AA;
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #8A0B86;
+}
+
+.btn-outline {
+    border: 2px solid #000000;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+.btn-outline:hover {
+    color: #3C3640;
+    border-color: #3C3640;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.overtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: #AF05AA;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 32px 32px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.end {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* layout */
+
+#header-container {
+    background-color: #EA21A2;
+}
+
+.header {
+    padding: 24px 72px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* hero section */
+
+#hero-container {
+    background-color: #F8F1F1;
+    color: #0A0A0A;
+    padding: 48px 72px 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem e quebrem a linha */
+}
+
+.hero-text {
+    flex: 1 1 50%; /* Flexível para ocupar até 50% da largura */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 96px 0;
+    font-family: 'Playfair Display', serif;
+    color: #0A0A0A;
+    max-width: 600px;
+}
+
+.hero-img {
+    flex: 1 1 50%; /* Flexível para ocupar até 50% da largura */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Texto especial do Hero (para o novo texto) */
+.hero-text p {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna para o corpo do texto */
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* serviços section */
+
+#services-container {
+    padding: 96px 72px;
+    background-color: #fff;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.service-card {
+    background-color: #FFF8F8;
+    border-radius: 40px;
+    color: #000000;
+    border: 2px solid #D6D4E2;
+    flex: 1 1 calc(33% - 32px); /* Ajusta a largura dos cards para 33% */
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 39px 39px 0 0;
+    object-fit: cover;
+}
+
+.service-text {
+    padding: 32px;
+}
+
+.service-text h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.service-text p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #3C3640;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* localizacao section */
+
+#location-container {
+    background-color: #f5f3f4;
+}
+
+#location-container .location {
+    padding: 96px 72px 48px;
+}
+
+#location-container address {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* footer section */
+
+footer {
+    background-color: #EA21A2;
+    color: #ffffff;
+    gap: 10px;
+    padding: 48px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logocopy {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* scroll section */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5EEEE;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8A0B86;
+    border-radius: 4px;
+}
+
+/* Ajuste da logo no footer */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-logo img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+}
+
+.footer-text {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.animated-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #8A0B86;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animated-button:hover {
+    background-color: #EA21A2;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.animated-button:active {
+    transform: translateY(1px) scale(0.95);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para dispositivos menores */
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+/* Estilo geral para o botão */
+/* Estilo geral para o botão */
+.credits-btn {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #7b1b46; /* Cor de fundo */
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .credits-btn {
+        margin: 0 auto; /* Centraliza horizontalmente o botão */
+        max-width: 90%; /* Garante que o botão não ultrapasse a largura da tela */
+        left: auto; /* Remove qualquer posição fixa que possa causar o overflow */
+        right: auto;
+        text-align: center; /* Alinha o texto no centro */
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Centraliza tudo */
+        gap: 12px; /* Espaçamento entre os elementos */
+    }
+}
+
+    #header-container {
+        padding: 16px; /* Reduz o padding do cabeçalho para evitar overflow */
+    }
+
+    .header {
+        flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        gap: 12px;
+    }
+}
+
+    .hero-img img {
+        width: 100%; /* Ajusta a imagem à largura do dispositivo */
+        max-width: 100%;
+        height: auto; /* Mantém as proporções da imagem */
+    }
+
+    .hero-text {
+        text-align: center; /* Centraliza o texto para dispositivos menores */
+    }
+
+    .hero-text h1 {
+        font-size: 32px; /* Ajuste de tamanho para mobile */
+        line-height: 40px;
+        font-weight: 700;
+        color: #0A0A0A;
+    }
+    
+    .service-card {
+        width: 100%; /* Os cards ocupam toda a largura disponível */
+        margin-bottom: 15px;
+    }
+
+    .services-list {
+        display: block; /* Ajusta para uma coluna em dispositivos menores */
+    }
+
+    iframe {
+        width: 100%; /* Faz o iframe ocupar toda a largura */
+        height: 300px;
+    }
+
+    .footer-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-logo img {
+        width: 150px; /* Reduz o tamanho da logo */
+    }
+}
+
+/* Estilo para dispositivos de tablet */
+@media (max-width: 1024px) {
+    .logo {
+        width: 240px; /* Mantém um tamanho ajustado para tablets */
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+    #header-container {
+        padding: 16px;
+    }
+
+    .header {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        gap: 12px;
+    }
+}

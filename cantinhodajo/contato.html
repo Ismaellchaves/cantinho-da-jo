@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Horários</title>
+    <link rel="stylesheet" href="./css/stylee.css">
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Horários</h1>
+        <p>Escolha um horário e serviço desejado</p>
+    </header>
+
+    <main>
+        <section class="schedule">
+            <h2>Horários Disponíveis</h2>
+            <div class="time-slots">
+                <button class="time-slot" data-time="08:00">08:00</button>
+                <button class="time-slot" data-time="09:00">09:00</button>
+                <button class="time-slot" data-time="10:00">10:00</button>
+                <button class="time-slot" data-time="11:00">11:00</button>
+                <button class="time-slot" data-time="13:00">13:00</button>
+                <button class="time-slot" data-time="14:00">14:00</button>
+                <button class="time-slot" data-time="15:00">15:00</button>
+                <button class="time-slot" data-time="16:00">16:00</button>
+                <button class="time-slot" data-time="17:00">17:00</button>
+                <button class="time-slot" data-time="18:00">18:00</button>
+                <button class="time-slot" data-time="19:00">19:00</button>
+                <button class="time-slot" data-time="20:00">20:00</button>
+                <!-- Continue até 21h -->
+            </div>
+        </section>
+
+        <section class="custom-time">
+            <h2>Ou Personalize o Horário</h2>
+            <label for="custom-time">Escolha o horário desejado:</label>
+            <input type="time" id="custom-time" name="custom-time" required>
+            <button id="add-custom-time">Adicionar Horário</button>
+        </section>
+
+        <section class="services">
+            <h2>Serviços</h2>
+            <div class="service-list">
+                <button class="service" data-service="Cabelo">Escova Modeladora</button>
+                <button class="service" data-service="Sobrancelha">Sobrancelha</button>
+                <button class="service" data-service="Escova">Hidratação</button>
+                <button class="service" data-service="Hidratação">Alisamento</button>
+                <button class="service" data-service="Alisamento">Sobrancelha, Escova e Hidratação</button>
+                <button class="service" data-service="Sobrancelha e Escova">Sobrancelha e Escova</button>
+                <button class="service" data-service="Escova e Hidratação">Escova e Hidratação</button>
+                <button class="service" data-service="Escova e Afins">Aplicação de Tinta</button>
+            </div>
+        </section>
+
+        <section class="selected-items">
+            <h2>Seleções</h2>
+            <div id="selected-time">
+                <h3>Horário Selecionado:</h3>
+                <ul></ul>
+            </div>
+            <div id="selected-services">
+                <h3>Serviços Selecionados:</h3>
+                <ul></ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Agendar Horário</h2>
+            <label for="client-name">Nome da Cliente:</label>
+            <input type="text" id="client-name" placeholder="Digite seu nome" required>
+            <a id="whatsapp-button" href="https://api.whatsapp.com/send?phone=5588993495533" target="_blank" class="animated-button">
+                Quero agendar horário
+            </a>
+        </section>
+        
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
